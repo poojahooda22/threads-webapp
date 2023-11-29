@@ -16,6 +16,8 @@ import {
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { zodResolver } from '@hookform/resolvers/zod';
+import * as z from 'zod';
+
 
 interface Props {
     user: {
@@ -40,6 +42,10 @@ const AccountProfile = ({ user, btnTitle}: Props) => {
       bio: ''
     }
   })
+
+  function onSubmit(values: z.infer<typeof UserValidation>) {
+    console.log(values);
+  }
 
   
   return (
