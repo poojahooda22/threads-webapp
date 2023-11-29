@@ -4,6 +4,10 @@ import { useForm } from 'react-hook-form';
 import {
   Form
 } from '@/components/ui/form';
+import {
+  UserValidation
+} from '@/lib/validations/user';
+import { zodResolver } from '@hookform/resolvers/zod';
 
 interface Props {
     user: {
@@ -18,10 +22,20 @@ interface Props {
 }
 
 const AccountProfile = ({ user, btnTitle}: Props) => {
+
+  const form = useForm({
+    resolver: zodResolver(UserValidation),
+    defaultValues: {
+      profile_photo: '',
+      name: '',
+      username: '',
+      bio: ''
+    }
+  })
   return (
-    <div>
+    <Form>
       Account Profile
-    </div>
+    </Form>
   )
 }
 
