@@ -57,7 +57,7 @@ const AccountProfile = ({ user, btnTitle}: Props) => {
               <FormDescription>
                 This is your public display name.
               </FormDescription>
-              <FormMessage />
+              
             </FormItem>
           )}
         />
