@@ -94,9 +94,6 @@ const AccountProfile = ({ user, btnTitle}: Props) => {
                   onChange={(e) => handleImage(e, field.onChange)}
                 />
               </FormControl>
-              <FormDescription>
-                
-              </FormDescription>
               <FormMessage />
             </FormItem>
           )}
