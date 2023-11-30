@@ -56,7 +56,7 @@ const AccountProfile = ({ user, btnTitle}: Props) => {
       >
         <FormField
           control={form.control}
-          name="username"
+          name="profile_photo"
           render={({ field }) => (
             <FormItem>
               <FormLabel>Username</FormLabel>
