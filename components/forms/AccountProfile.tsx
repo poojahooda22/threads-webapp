@@ -97,6 +97,28 @@ const AccountProfile = ({ user, btnTitle}: Props) => {
             </FormItem>
           )}
         />
+
+
+        <FormField
+          control={form.control}
+          name="profile_photo"
+          render={({ field }) => (
+            <FormItem className='flex items-center gap-4'>
+              <FormLabel className='account-form_image-label'>
+                
+              </FormLabel>
+              <FormControl className='flex-1 text-base-semibold text-gray-200'>
+                <Input 
+                  type="file"
+                  accept="image/*"
+                  placeholder="Upload a photo"
+                  className='account-form_image-input'
+                  onChange={(e) => handleImage(e, field.onChange)}
+                />
+              </FormControl>
+            </FormItem>
+          )}
+        />
         <Button type="submit">Submit</Button>
       </form>
     </Form>
