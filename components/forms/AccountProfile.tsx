@@ -104,7 +104,7 @@ const AccountProfile = ({ user, btnTitle}: Props) => {
           name="name"
           render={({ field }) => (
             <FormItem className='flex items-center gap-3 w-full'>
-              <FormLabel className='account-form_image-label'>
+              <FormLabel className=''>
                 Name
               </FormLabel>
               <FormControl className='flex-1 text-base-semibold text-gray-200'>
