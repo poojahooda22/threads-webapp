@@ -58,7 +58,7 @@ const AccountProfile = ({ user, btnTitle}: Props) => {
           control={form.control}
           name="profile_photo"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className='flex '>
               <FormLabel>Username</FormLabel>
               <FormControl>
                 <Input placeholder="shadcn" {...field} />
