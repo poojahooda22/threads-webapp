@@ -109,9 +109,7 @@ const AccountProfile = ({ user, btnTitle}: Props) => {
               </FormLabel>
               <FormControl className='flex-1 text-base-semibold text-gray-200'>
                 <Input 
-                  type="file"
-                  accept="image/*"
-                  placeholder="Upload a photo"
+                  
                   className='account-form_image-input'
                   onChange={(e) => handleImage(e, field.onChange)}
                 />
