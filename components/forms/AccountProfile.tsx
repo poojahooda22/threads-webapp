@@ -17,6 +17,7 @@ import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import Image from 'next/image';
 
 
 interface Props {
@@ -60,7 +61,25 @@ const AccountProfile = ({ user, btnTitle}: Props) => {
           render={({ field }) => (
             <FormItem className='flex items-center gap-4'>
               <FormLabel className='account-form_image-label'>
-                
+                {field.value ? (
+                  <Image
+                    src={field.value}
+                    alt="profile photo"
+                    width={96}
+                    height={96}
+                    priority
+                    className='rounded-full object-contain'
+                  />
+                ) : (
+                  <Image
+                    src=
+                    alt="profile photo"
+                    width={96}
+                    height={96}
+                    priority
+                    className='rounded-full object-contain'
+                  />
+                )}
               </FormLabel>
               <FormControl>
                 <Input placeholder="shadcn" {...field} />
