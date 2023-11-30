@@ -108,8 +108,7 @@ const AccountProfile = ({ user, btnTitle}: Props) => {
                 Name
               </FormLabel>
               <FormControl className='flex-1 text-base-semibold text-gray-200'>
-                <Input 
-                  
+                <Input  
                   className='account-form_image-input'
                   onChange={(e) => handleImage(e, field.onChange)}
                 />
