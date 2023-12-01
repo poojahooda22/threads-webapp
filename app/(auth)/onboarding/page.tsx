@@ -13,6 +13,7 @@ async function Page() {
        name: userInfo?.name || user?.firstName || "",
        bio: userInfo?.bio || "",
        image: userInfo?.image || user?.imageUrl, 
+       
     }
 
     return (
