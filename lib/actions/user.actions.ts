@@ -14,7 +14,10 @@ export async function updateUser(
 ): Promise<void> {
     connectToDB();
 
-    await User.findOneAndUpdate({
-
-    });
+    await User.findOneAndUpdate(
+        {id: userId},
+        {
+            username: username.toLowerCase(),
+        },
+);
 }
