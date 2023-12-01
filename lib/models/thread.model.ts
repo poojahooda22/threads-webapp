@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const threadSchema = new mongoose.Schema({
+const threadSchema = new mongoose.Schema({ 
 
 });
 
