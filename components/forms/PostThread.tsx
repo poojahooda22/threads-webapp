@@ -44,7 +44,7 @@ function PostThread({ userId }: { userId: string}) {
     const pathname = usePathname();
   
     const form = useForm({
-      
+resolver: zodResolver(ThreadValidation),
       defaultValues: {
        thread: '',
        accountId: userId, 
