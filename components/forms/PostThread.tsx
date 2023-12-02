@@ -13,8 +13,8 @@ import {
   FormMessage,
 } from '@/components/ui/form';
 import {
-  UserValidation
-} from '@/lib/validations/user';
+  ThreadValidation
+} from '@/lib/validations/thread';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { zodResolver } from '@hookform/resolvers/zod';
