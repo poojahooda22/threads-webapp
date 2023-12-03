@@ -37,10 +37,10 @@ export async function createThread({text, author, communityId, path}: Params) {
 export async function fetchPosts(pageNumber = 1, pageSize = 20) {
     connectToDB();
 
-    //calculate the number of posts to skip
-    // const skipAmount = pageSize * (pageNumber - 1);
+    // calculate the number of posts to skip
+    const skipAmount = pageSize * (pageNumber - 1);
 
-    //fetch the posts that have no parentts (top-level threads...)
+    // fetch the posts that have no parentts (top-level threads...)
 
     const postsQuery = Thread.find({ parentId: { $in: [null, undefined]}})
         .sort({ createdAt: 'desc' })
