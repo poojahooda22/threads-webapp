@@ -56,7 +56,7 @@ export async function fetchPosts(pageNumber = 1, pageSize = 20) {
             }
         })
 
-        // const totalPostsCount = await Thread.countDocuments({ parentId: { $in: [null, undefined]} })
+        const totalPostsCount = await Thread.countDocuments({ parentId: { $in: [null, undefined]} })
 
         // const posts = await postsQuery.exec();
 
