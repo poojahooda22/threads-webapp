@@ -1,6 +1,6 @@
 import { fetchPosts } from "@/lib/actions/thread.actions"
 
-export default function Home() {
+export default async function Home() {
 
   const result = await fetchPosts();
 
