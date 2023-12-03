@@ -15,8 +15,21 @@ interface Params {
 
 export async function createThread({text, author, communityId, path}: Params) {
     try {
+        connectToDB();
 
+    const createThread = await Thread.create({
+        text,
+        author,
+        community: null,
+    });
+
+    //Update user model
+    await User.findByIdAndUpdate(author, {
+        $push: { threads: createThread._id }
+    })
+
+    revalidatePath(path);
     } catch (error: any ) {
-        
+
     }
 }
