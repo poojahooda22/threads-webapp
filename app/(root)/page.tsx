@@ -8,6 +8,14 @@ export default async function Home() {
   return (
     <>
        <h1 className='head-text text-left'>Home</h1>
+
+       <section>
+        {result.posts.length === 0 ? (
+          <p></p>
+        ) : (
+
+        )}
+       </section>
     </>
   )
 }
