@@ -30,6 +30,6 @@ export async function createThread({text, author, communityId, path}: Params) {
 
     revalidatePath(path);
     } catch (error: any ) {
-
+        throw new Error
     }
 }
