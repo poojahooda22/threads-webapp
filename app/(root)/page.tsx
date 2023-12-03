@@ -1,4 +1,6 @@
-import { fetchPosts } from "@/lib/actions/thread.actions"
+import { fetchPosts } from "@/lib/actions/thread.actions";
+
+import { currentUser } from "@clerk/nextjs";
 
 export default async function Home() {
 
@@ -11,9 +13,19 @@ export default async function Home() {
 
        <section>
         {result.posts.length === 0 ? (
-          <p></p>
+          <p>No threads found</p>
         ) : (
-
+          <>
+            {result.posts.map((post) => (
+              <ThreadCard
+                key={post._id}
+                id={post._id}
+                currentUserId={user.id}
+                parentId={post.parentId}
+                title={post.title}
+              />
+            ))}
+          </>
         )}
        </section>
     </>
