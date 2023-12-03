@@ -2,7 +2,7 @@ import { fetchPosts } from "@/lib/actions/thread.actions"
 
 export default function Home() {
 
-  //const result = await fetchPosts();
+  const result = await fetchPosts();
 
   console.log(result);
   return (
