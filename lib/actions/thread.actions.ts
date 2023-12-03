@@ -44,7 +44,7 @@ export async function fetchPosts(pageNumber = 1, pageSize = 20) {
 
     const postsQuery = Thread.find({ parentId: { $in: [null, undefined]}})
         .sort({ createdAt: 'desc' })
-        // .skip(skipAmount)
+        .skip(skipAmount)
         .limit(pageSize)
         .populate({ path: 'author', model: User})
         // .populate({
