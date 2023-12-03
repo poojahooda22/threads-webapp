@@ -6,7 +6,7 @@ export default async function Home() {
 
   const result = await fetchPosts();
 
-  console.log(result);
+  
   return (
     <>
        <h1 className='head-text text-left'>Home</h1>
