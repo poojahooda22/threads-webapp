@@ -34,7 +34,8 @@ const ThreadCard = ({
     author,
     community,
     createdAt,
-    comments
+    comments,
+    isComment,
 }: Props) => {
     return (
         <article className="flex w-full flex-col rounded-xl bg-dark-2 p-7 mb-8">
@@ -104,6 +105,14 @@ const ThreadCard = ({
                                     className="cursor-pointer object-contain"
                                 />
                             </div>
+
+                            {isComment &&  comments.length > 0 && (
+                                <Link href={`/thread/${id}`}>
+                                    <p className="mt-1 text-subtle-medium text-gray-1">
+                                        {comments.length} replies
+                                    </p>
+                                </Link>
+                            )}
                         </div>
                     </div>
                 </div>
