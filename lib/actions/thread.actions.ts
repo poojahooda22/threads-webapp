@@ -95,8 +95,10 @@ export async function fetchThreadById(id: string) {
                         }
                     }
                 ]
-            })
-    } catch (error) {
+            }).exec();
 
+            return thread;
+    } catch (error: any) {
+        throw new Error(`Error fetching thread: ${error.message}`)
     }
 }
