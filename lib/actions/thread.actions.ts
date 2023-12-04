@@ -90,7 +90,7 @@ export async function fetchThreadById(id: string) {
                         model: Thread,
                         populate: {
                             path: 'author',
-                            // model: User,
+                            model: User,
                             // select: "_id id name parentId image"
                         }
                     }
