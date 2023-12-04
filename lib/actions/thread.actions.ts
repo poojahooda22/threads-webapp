@@ -88,11 +88,11 @@ export async function fetchThreadById(id: string) {
                     {
                         path: 'children',
                         model: Thread,
-                        // populate: {
-                        //     path: 'author',
-                        //     model: User,
-                        //     select: "_id id name parentId image"
-                        // }
+                        populate: {
+                            // path: 'author',
+                            // model: User,
+                            // select: "_id id name parentId image"
+                        }
                     }
                 ]
             })
