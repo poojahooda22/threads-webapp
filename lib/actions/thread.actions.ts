@@ -85,15 +85,15 @@ export async function fetchThreadById(id: string) {
                        model: User,
                        select: "_id id name parentId image" 
                     },
-                    // {
-                    //     path: 'children',
-                    //     model: Thread,
-                    //     populate: {
-                    //         path: 'author',
-                    //         model: User,
-                    //         select: "_id id name parentId image"
-                    //     }
-                    // }
+                    {
+                        path: 'children',
+                        model: Thread,
+                        // populate: {
+                        //     path: 'author',
+                        //     model: User,
+                        //     select: "_id id name parentId image"
+                        // }
+                    }
                 ]
             })
     } catch (error) {
