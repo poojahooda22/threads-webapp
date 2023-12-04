@@ -83,7 +83,7 @@ const ThreadCard = ({
                                     className="cursor-pointer object-contain"
                                 />
                                 <Image 
-                                    src="/assets/heart-gray.svg"
+                                    src="/assets/reply.svg"
                                     alt="heart"
                                     width={24}
                                     height={24}
