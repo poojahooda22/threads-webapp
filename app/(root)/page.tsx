@@ -10,7 +10,7 @@ export default async function Home() {
   const user = await currentUser();
   return (
     <>
-       <h1 className='head-text text-left'>Home</h1>
+       <h1 className='head-text text-left mb-4'>Home</h1>
 
        <section>
         {result.posts.length === 0 ? (
