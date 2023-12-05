@@ -114,6 +114,15 @@ export async function addCommentToThread(
 
     try {
         //find the original thread by its ID
-        
+        const originalThread = await Thread.findById(threadId);
+
+        if(!originalThread) {
+            throw new Error('Thread not found');
+        }
+
+        //create a new thread with the comment text
+        const commentThread = new Thread()
+    } catch(error: any) {
+        throw new Error(`Error adding comment to thread: ${error.message}`)
     }
 }
