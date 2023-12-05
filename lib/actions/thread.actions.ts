@@ -124,6 +124,7 @@ export async function addCommentToThread(
         const commentThread = new Thread({
             text: commentText,
             author: userId,
+            parentId: threadId,
         })
     } catch(error: any) {
         throw new Error(`Error adding comment to thread: ${error.message}`)
