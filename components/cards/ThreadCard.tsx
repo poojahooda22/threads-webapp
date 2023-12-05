@@ -38,7 +38,7 @@ const ThreadCard = ({
     isComment,
 }: Props) => {
     return (
-        <article className="flex w-full flex-col rounded-xl bg-dark-2 p-7 mb-8">
+        <article className="flex w-full flex-col rounded-xl bg-dark-2 p-7 mb-6">
             <div className="flex items-center justify-between">
                 <div className="flex w-full flex-1 flex-row gap-4">
                     <div className="flex flex-col items-center">
