@@ -134,7 +134,7 @@ export async function addCommentToThread(
         originalThread.children.push(savedCommentThread._id);
 
         // save the original thread
-        // await originalThread.save();
+        await originalThread.save();
 
         // revalidatePath(path);
     } catch(error: any) {
