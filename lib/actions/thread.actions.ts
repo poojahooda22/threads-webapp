@@ -131,7 +131,7 @@ export async function addCommentToThread(
         const savedCommentThread = await commentThread.save();
 
         // //update the original thread to include the new comment 
-        // originalThread.children.push(savedCommentThread._id);
+        originalThread.children.push(savedCommentThread._id);
 
         // //save the original thread
         // await originalThread.save();
