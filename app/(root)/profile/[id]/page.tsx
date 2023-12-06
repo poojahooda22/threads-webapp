@@ -55,6 +55,7 @@ async function Page({params} : {params: {id: string}}) {
                             value={tab.value}
                             className="w-full text-light-1"
                         >
+                            <ThreadTab />
 
                         </TabsContent>
                     ))}
