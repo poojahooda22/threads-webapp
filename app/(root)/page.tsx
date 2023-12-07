@@ -12,7 +12,7 @@ export default async function Home() {
     <>
        <h1 className='head-text text-left mb-4'>Home</h1>
 
-       <section>
+       <section className="mt-8 flex flex-col gap-10">
         {result.posts.length === 0 ? (
           <p className="no-result">No threads found</p>
         ) : (
