@@ -32,7 +32,7 @@ const Page = async ({params} : {params: {id: string}}) => {
                 />
             </div>
 
-            <div className="mt-7">
+            <div className="mt-8">
                 <Comment 
                     threadId={thread._id}
                     currentUserImg={userInfo.image}
