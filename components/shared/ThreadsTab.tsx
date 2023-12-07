@@ -14,7 +14,7 @@ const ThreadsTab = async ({ currentUserId, accountId, accountType}: Props) => {
 
     if(!result) redirect('/')
     return (
-        <section>
+        <section className="mt-9 flex flex-col gap-10">
             ThreadsTab
         </section>
     )
