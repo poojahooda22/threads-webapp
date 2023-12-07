@@ -14,7 +14,7 @@ const ProfileHeader = ({ accountId, authUserId, name, username, imgUrl, bio}: Pr
         <div className="flex w-full flex-col justify-start">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                    <div>
+                    <div className="relative h-20 w-20 object-cover">
                         <Image
                             src={imgUrl}
                             alt="Profile Image"
@@ -31,7 +31,7 @@ const ProfileHeader = ({ accountId, authUserId, name, username, imgUrl, bio}: Pr
 
                 {/* TODO: Community */}
                 <p
-                    className="mt-6 max-ww-lg text-base-regular text-light-2"
+                    className="mt-6 max-w-lg text-base-regular text-light-2"
                 >
                     {bio}
                 </p>
