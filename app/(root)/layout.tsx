@@ -24,7 +24,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <Topbar />
 
-          <main className='flex fllex-row'>
+          <main className='flex flex-row'>
             <LeftSidebar />
 
             <section className='main-container'>
