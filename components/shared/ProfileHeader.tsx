@@ -24,7 +24,8 @@ const ProfileHeader = ({ accountId, authUserId, name, username, imgUrl, bio}: Pr
                     </div>
 
                     <div 
-                        className="flex-1">
+                        className="flex-1"
+                        >
                         <h1 className="text-left text-heading3-bold text-light-1">{name}</h1>
                         <p className="text-base-medium text-gray-1">@{username}</p>
                     </div>
