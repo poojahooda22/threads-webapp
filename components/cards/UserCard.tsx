@@ -1,3 +1,5 @@
+import User from "@/lib/models/user.model"
+
 function UserCard () {
     return (
         <div>
@@ -6,4 +8,4 @@ function UserCard () {
     )
 }
 
-export default 
+export default UserCard
