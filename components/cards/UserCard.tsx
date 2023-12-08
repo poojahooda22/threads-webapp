@@ -6,4 +6,4 @@ function UserCard () {
     )
 }
 
-export 
+export default 
