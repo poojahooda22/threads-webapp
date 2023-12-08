@@ -39,8 +39,8 @@ async function Page() {
                 key={person.id}
                 id={person.id}
                 name={person.name}
-                username={person.username}
-                // imgUrl={person.image}
+                username={person.username}s
+                imgUrl={person.image}
                 // personType='User'
               />
             ))}
