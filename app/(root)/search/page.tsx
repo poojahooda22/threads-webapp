@@ -5,6 +5,7 @@ import PostThread from "@/components/forms/PostThread";
 import Image from 'next/image';
 import { profileTabs } from '@/constants';
 import ThreadsTab from "@/components/shared/ThreadsTab";
+import UserCard from "@/components/cards/UserCard";
 
 
 async function Page() {
@@ -39,7 +40,7 @@ async function Page() {
                 key={person.id}
                 id={person.id}
                 name={person.name}
-                username={person.username}s
+                username={person.username}
                 imgUrl={person.image}
                 personType='User'
               />
