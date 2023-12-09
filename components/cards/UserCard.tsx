@@ -1,5 +1,7 @@
 // import User from "@/lib/models/user.model"
 
+import Image from "next/image";
+
 interface Props {
     id: string;
     name: string;
@@ -14,9 +16,23 @@ const UserCard = ({
     name, username, imgUrl, personType
 }: Props) => {
     return (
-        <div>
-            UserCard
-        </div>
+        <article className="user-card">
+            <div className="user-card_avatar">
+                <Image
+                    src={imgUrl}
+                    alt="logo"
+                    width={48}
+                    height={48}
+                    className="rounded-full"
+                />
+
+                <div className="flex-1 text-ellipsis">
+                    <h4 className="">{name}</h4>
+
+                </div>
+            </div>
+           
+        </article>
     )
 }
 
