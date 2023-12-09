@@ -33,7 +33,8 @@ const UserCard = ({
                 </div>
             </div>    
             <Button>
-                </Button>       
+                
+            </Button>       
         </article>
     )
 }
