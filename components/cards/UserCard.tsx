@@ -1,6 +1,7 @@
 // import User from "@/lib/models/user.model"
 
 import Image from "next/image";
+import { Button } from "../ui/button";
 
 interface Props {
     id: string;
@@ -30,7 +31,9 @@ const UserCard = ({
                     <h4 className="text-base-semibold text-light-1">{name}</h4>
                     <p className="text-small-medium text-gray-1">@{username}</p>
                 </div>
-            </div>           
+            </div>    
+            <Button>
+                </Button>       
         </article>
     )
 }
