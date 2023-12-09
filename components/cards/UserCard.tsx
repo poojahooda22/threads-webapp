@@ -18,7 +18,7 @@ const UserCard = ({
     name, username, imgUrl, personType
 }: Props) => {
 
-    const 
+    const router = useRouter();
     return (
         <article className="user-card">
             <div className="user-card_avatar">
