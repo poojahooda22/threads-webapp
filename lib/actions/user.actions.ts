@@ -119,7 +119,7 @@ export async function fetchUsers({
             query.$or = [
                 {username: { $regex: regex}},
                 {name: { $regex: regex}}
-            ]
+            ];
         }
 
         const sortOptions = { createdAt: sortBy };
