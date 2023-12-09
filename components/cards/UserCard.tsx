@@ -34,7 +34,6 @@ const UserCard = ({
             </div>    
             <Button>
                 View
-                
             </Button>       
         </article>
     )
