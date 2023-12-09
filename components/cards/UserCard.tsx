@@ -28,7 +28,7 @@ const UserCard = ({
 
                 <div className="flex-1 text-ellipsis">
                     <h4 className="text-base-semibold text-light-1">{name}</h4>
-                    <p className="">@{username}</p>
+                    <p className="text-small">@{username}</p>
                 </div>
             </div>           
         </article>
