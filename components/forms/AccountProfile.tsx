@@ -34,17 +34,18 @@ interface Props {
         name: string;
         bio: string;
         image: string;
+
     }
     btnTitle: string; 
 }
 
-const AccountProfile = ({ user, btnTitle}: Props) => {
+const AccountProfile = ({ user, btnTitle }: Props) => {
   const [ files, setFiles ] = useState<File[]>([]);
   const { startUpload } = useUploadThing("media");
   const router = useRouter();
   const pathname = usePathname();
 
-  const form = useForm({
+  const form = useForm<z.infer<typeof UserValidation>>({
     resolver: zodResolver(UserValidation),
     defaultValues: {
       profile_photo: user?.image || "",
@@ -76,18 +77,17 @@ const AccountProfile = ({ user, btnTitle}: Props) => {
     }
   }
 
-  const onSubmit = async (values: z.infer<typeof 
-    UserValidation>) => {
+  const onSubmit = async (values: z.infer<typeof UserValidation>) => {
     
       const blob = values.profile_photo;
 
-      const hasImageChanges = isBase64Image(blob);
+      const hasImageChanged = isBase64Image(blob);
 
-      if(hasImageChanges) {
+      if(hasImageChanged) {
         const imgRes = await startUpload(files)
 
-        if(imgRes && imgRes[0].fileUrl) {
-          values.profile_photo = imgRes[0].fileUrl;
+        if(imgRes && imgRes[0].url) {
+          values.profile_photo = imgRes[0].url;
         }
       }
 
