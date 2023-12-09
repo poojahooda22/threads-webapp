@@ -35,7 +35,7 @@ const UserCard = ({
                     <p className="text-small-medium text-gray-1">@{username}</p>
                 </div>
             </div>    
-            <Button className="user-card_btn">
+            <Button className="user-card_btn" onClick={}>
                 View
             </Button>       
         </article>
