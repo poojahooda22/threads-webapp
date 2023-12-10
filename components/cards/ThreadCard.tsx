@@ -53,7 +53,8 @@ const ThreadCard = ({
                                 className="cursor-pointer rounded-full"
                             />
                         </Link>
-                        <div className="thread-card_bar" />
+                        <div 
+                        className="thread-card_bar" />
                     </div>
 
                     <div className="flex w-full flex-col">
