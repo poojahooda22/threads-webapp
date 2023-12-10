@@ -1,4 +1,3 @@
-// import User from "@/lib/models/user.model"
 'use client';
 
 import Image from "next/image";
@@ -11,7 +10,6 @@ interface Props {
     username: string;
     imgUrl: string;
     personType: string;
-
 }
 
 const UserCard = ({
