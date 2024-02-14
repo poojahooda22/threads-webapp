@@ -22,7 +22,8 @@ function Topbar() {
                 <div className="block md:hidden">
                     <SignedIn>
                         <SignOutButton>
-                            <div className='flex cursor-pointer'>
+                            <div 
+                            className='flex cursor-pointer'>
                                 <Image
                                     src="/assets/logout.svg"
                                     alt="logout"
