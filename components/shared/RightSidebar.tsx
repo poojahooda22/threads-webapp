@@ -12,7 +12,7 @@ function RightSidebar() {
             >
                 <h3 
                     className="text-heading4-medium text-light-1"
-                    >Suggested Communities</h3>
+                >Suggested Communities</h3>
             </div>
 
             <div 
