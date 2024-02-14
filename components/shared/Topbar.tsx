@@ -22,7 +22,7 @@ function Topbar() {
                 className="flex items-center gap-1"
             >
                 <div 
-                className="block md:hidden">
+                    className="block md:hidden">
                     <SignedIn>
                         <SignOutButton>
                             <div 
