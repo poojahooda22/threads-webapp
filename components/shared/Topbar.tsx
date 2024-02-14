@@ -16,7 +16,8 @@ function Topbar() {
                 />
                 <p className="text-headings3-bold text-light-1 
                 max-xs:hidden">
-                    Threads</p>
+                    Threads
+                    </p>
             </Link>
 
             <div 
