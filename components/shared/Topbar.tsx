@@ -18,7 +18,8 @@ function Topbar() {
                 max-xs:hidden">Threads</p>
             </Link>
 
-            <div className="flex items-center gap-1">
+            <div 
+            className="flex items-center gap-1">
                 <div className="block md:hidden">
                     <SignedIn>
                         <SignOutButton>
