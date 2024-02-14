@@ -11,7 +11,8 @@ function Topbar() {
         >
             <Link 
                 href="/" 
-                className="flex items-center gap-4"
+                className="flex items-center 
+                gap-4"
             >
                 <Image
                     src="/assets/logo.svg"
