@@ -56,8 +56,7 @@ function Topbar() {
                         }
                     }}
                 />
-            </div>
-             
+            </div>     
         </nav>
     )
 }
