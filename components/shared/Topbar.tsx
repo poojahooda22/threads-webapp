@@ -15,7 +15,8 @@ function Topbar() {
                     height={28}
                 />
                 <p className="text-headings3-bold text-light-1 
-                max-xs:hidden">Threads</p>
+                max-xs:hidden">
+                    Threads</p>
             </Link>
 
             <div 
