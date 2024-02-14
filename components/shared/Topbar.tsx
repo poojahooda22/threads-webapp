@@ -23,7 +23,7 @@ function Topbar() {
             >
                 <div 
                     className="block md:hidden"
-                    >
+                >
                     <SignedIn>
                         <SignOutButton>
                             <div 
