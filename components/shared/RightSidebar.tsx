@@ -8,7 +8,8 @@ function RightSidebar() {
             rightsidebar"
         >
             <div 
-                className="flex flex-1 flex-col 
+                className="flex flex-1 
+                flex-col 
                 justify-start"
             >
                 <h3 
